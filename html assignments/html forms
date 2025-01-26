@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #004d4d;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        background-color: #006666;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 400px;
+      }
+
+      .form-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .form-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="password"],
+      .form-container input[type="date"],
+      .form-container input[type="number"],
+      .form-container select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .form-container .checkbox-group,
+      .form-container .radio-group {
+        margin-bottom: 15px;
+      }
+
+      .form-container input[type="checkbox"],
+      .form-container input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      .form-container .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .form-container button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .form-container button[type="submit"] {
+        background-color: orange;
+        color: white;
+      }
+
+      .form-container button[type="reset"] {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Application Form</h1>
+      <form>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <div class="radio-group">
+          <label>Positions Available:</label>
+          <label
+            ><input type="radio" name="position" value="junior" /> Junior
+            Developer</label
+          >
+          <label
+            ><input type="radio" name="position" value="mid-level" /> Mid-Level
+            Developer</label
+          >
+          <label
+            ><input type="radio" name="position" value="senior" /> Senior
+            Developer</label
+          >
+        </div>
+
+        <div class="checkbox-group">
+          <label>Programming Languages:</label>
+          <label
+            ><input type="checkbox" name="language" value="java" /> Java</label
+          >
+          <label
+            ><input type="checkbox" name="language" value="javascript" />
+            JavaScript</label
+          >
+          <label
+            ><input type="checkbox" name="language" value="python" />
+            Python</label
+          >
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
