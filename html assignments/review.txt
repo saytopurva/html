@@ -1,0 +1,15 @@
+1. use google font
+2. header top padding is not matching
+3. nav height
+4. blog icon 
+5. news section content is going out of border 
+6. font size does not match
+7. header font weight
+8. replace dots listtype to das
+
+
+
+code change :
+1.change new head class head as per class head
+2.change div by section(43)
+3.
