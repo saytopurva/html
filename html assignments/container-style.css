@@ -1,0 +1,8 @@
+#container{
+height:400px;
+width:400px;
+margin:4px;
+border:solid black 2px;
+background-image: linear-gradient(pink rgb(128, 183, 216));
+
+}
