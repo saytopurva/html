@@ -13,3 +13,7 @@ code change :
 1.change new head class head as per class head
 2.change div by section(43)
 3.
+
+
+news heading match nhi kari
+welcome bhi nhi match kar
