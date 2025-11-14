@@ -1,0 +1,40 @@
+
+.login-button {
+  background-color: #3e93d8; /* Green */
+  color: rgb(249, 246, 246);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   display: block;         /* move button to its own line */
+  margin-top: 10px;       /* space above button */
+  width: 100%;  
+}
+input {
+  display: block;
+  margin-bottom: 15px; /* space between inputs */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* .login-button { */
+  /* display: block;         move button to its own line */
+  /* margin-top: 10px;       space above button */
+  /* width: 100%;            optional: full width button */
+
+
+.login-button:hover {
+  background-color: #08346a;
+}
+form {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Nav Bar</title>
+  <style>
+    
+    body, ul { margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; }
+
+    
+    nav {
+      background-color: #333;
+      overflow: hidden; 
+    }
+
+    /* Horizontal list styling */
+    nav ul {
+      list-style: none;
+      display: flex; /* Modern flex layout */
+    }
+
+    /* List items */
+    nav li {
+      /* Flex cares for equal spacing by default */
+    }
+
+    /* Links inside the nav */
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    /* Active link (optional) */
+    nav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact links</a></li>
+    </ul>
+  </nav>
+
+  <section id="home"><h1>Home Section</h1></section>
+  <section id="about"><h1>About Section</h1></section>
+  <section id="contact"><h1>Contact Section</h1></section>
+
+</body>
+</html>
